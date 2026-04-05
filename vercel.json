@@ -1,4 +1,14 @@
 {
-  "outputDirectory": ".",
-  "cleanUrls": true
+  "version": 2,
+  "builds": [
+    { "src": "*.html", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/", "dest": "/index.html" },
+    { "src": "/about", "dest": "/about.html" },
+    { "src": "/services", "dest": "/services.html" },
+    { "src": "/booknow", "dest": "/booknow.html" },
+    { "src": "/faq", "dest": "/faq.html" },
+    { "src": "/contact", "dest": "/contact.html" }
+  ]
 }
