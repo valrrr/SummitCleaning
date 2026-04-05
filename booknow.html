@@ -39,6 +39,10 @@ a{text-decoration:none;}
 .foot{background:var(--navy);border-top:1px solid var(--b);padding:36px 52px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;}
 .foot-logo img{height:32px;width:auto;display:block;}
 .foot-copy{font-size:9px;color:var(--td);letter-spacing:1px;}
+.foot-social{display:flex;align-items:center;gap:16px;}
+.foot-social a{display:flex;align-items:center;color:var(--td);transition:color 0.2s;}
+.foot-social a:hover{color:var(--gold);}
+.foot-social svg{width:17px;height:17px;}
 @media(max-width:860px){.sr-nav{padding:0 24px;}.sr-nav__links{display:none;}.nav-hamburger{display:flex;}.bk-hdr{padding:100px 24px 60px;}.foot{padding:24px;}}
 </style>
 </head>
@@ -74,6 +78,10 @@ a{text-decoration:none;}
 <footer class="foot">
   <a href="index.html" class="foot-logo"><img src="https://cdn.bookingkoala.com/uploads/summitresidence/2026/2/13/1770954119SummitResidenceCoLogo300pxCircle.png" alt="Summit Residence Co."></a>
   <span class="foot-copy">© 2026 Summit Residence Co. · Saratoga, CA</span>
+  <div class="foot-social">
+    <a href="https://www.instagram.com/summitresidenceco/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor"/></svg></a>
+    <a href="https://www.facebook.com/profile.php?id=61587655907539" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+  </div>
 </footer>
 </body>
 </html>
