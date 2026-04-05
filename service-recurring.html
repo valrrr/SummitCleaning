@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recurring Cleaning Plans | Summit Residence Co. | South Bay</title>
+<meta name="description" content="Weekly, biweekly, and monthly cleaning plans for Saratoga, Los Gatos & South Bay. Lock in your rate, same team every visit. Pause or cancel anytime.">
+<link rel="icon" href="https://cdn.bookingkoala.com/uploads/summitresidence/2026/2/13/1770954119SummitResidenceCoLogo300pxCircle.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0c1628;--navy-2:#152035;--gold:#c9a84c;--gold-2:#dfc078;--cream:#f8f6f1;--tl:rgba(248,246,241,0.92);--tm:rgba(248,246,241,0.78);--td:rgba(248,246,241,0.45);--dk:#1c2035;--dkm:rgba(28,32,53,0.80);--b:rgba(201,168,76,0.14);--bl:rgba(28,32,53,0.09);}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Montserrat',sans-serif;background:var(--navy);-webkit-font-smoothing:antialiased;}
+a{text-decoration:none;}
+.sr-nav{position:fixed;top:0;left:0;right:0;z-index:999;height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 52px;background:rgba(12,22,40,0.97);backdrop-filter:blur(16px);border-bottom:1px solid var(--b);}
+.nav-logo-img{height:40px;width:auto;display:block;}
+.sr-nav__links{display:flex;align-items:center;gap:36px;list-style:none;}
+.sr-nav__links>li>a{font-size:9.5px;font-weight:500;letter-spacing:2.2px;text-transform:uppercase;color:var(--tm);transition:color 0.2s;}
+.sr-nav__links>li>a:hover,.sr-nav__links>li>a.active{color:var(--tl);}
+.nav-cta{background:var(--gold);color:var(--navy)!important;font-weight:600!important;padding:10px 24px;}
+.nav-hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px;}
+.nav-hamburger span{display:block;width:22px;height:1.5px;background:var(--tl);transition:all 0.25s;}
+.nav-hamburger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg);}
+.nav-hamburger.open span:nth-child(2){opacity:0;}
+.nav-hamburger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg);}
+.nav-drop{position:relative;}
+.nav-drop>a{display:flex;align-items:center;gap:5px;}
+.nav-drop>a::after{content:'';display:inline-block;width:4px;height:4px;border-right:1px solid currentColor;border-bottom:1px solid currentColor;transform:rotate(45deg) translateY(-1px);opacity:0.5;transition:transform 0.2s;}
+.nav-drop:hover>a::after{transform:rotate(-135deg) translateY(1px);}
+.nav-drop-menu{position:absolute;top:calc(100% + 12px);left:50%;transform:translateX(-50%) translateY(-6px);background:rgba(12,22,40,0.98);border:1px solid var(--b);min-width:210px;padding:8px 0;opacity:0;visibility:hidden;transition:opacity 0.22s,transform 0.22s;pointer-events:none;backdrop-filter:blur(16px);list-style:none;z-index:100;}
+.nav-drop:hover .nav-drop-menu{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0);pointer-events:auto;}
+.nav-drop-menu li a{display:block;font-size:8.5px;font-weight:500;letter-spacing:1.8px;text-transform:uppercase;color:var(--tm);padding:11px 20px;border-bottom:1px solid rgba(201,168,76,0.06);transition:color 0.2s,background 0.2s;}
+.nav-drop-menu li:last-child a{border-bottom:none;}
+.nav-drop-menu li a:hover{color:var(--tl);background:rgba(201,168,76,0.06);}
+.nav-mobile{display:none;position:fixed;top:72px;left:0;right:0;z-index:998;background:rgba(12,22,40,0.98);border-bottom:1px solid var(--b);flex-direction:column;padding:16px 0;}
+.nav-mobile.open{display:flex;}
+.nav-mobile a{font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--tm);padding:14px 28px;border-bottom:1px solid rgba(201,168,76,0.07);transition:color 0.2s;}
+.nav-mobile a:hover{color:var(--tl);}
+.mobile-sub{padding-left:44px!important;font-size:9px!important;background:rgba(255,255,255,0.02)!important;border-bottom-color:rgba(201,168,76,0.04)!important;color:rgba(248,246,241,0.55)!important;}
+.mobile-cta{background:var(--gold);color:var(--navy)!important;margin:16px 28px 0;text-align:center;padding:14px!important;border-bottom:none!important;}
+.sr-ey{display:block;font-size:9px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:16px;}
+.btn{display:inline-block;background:var(--gold);color:var(--navy);font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:20px 54px;transition:background 0.2s,transform 0.18s,box-shadow 0.2s;box-shadow:0 4px 28px rgba(201,168,76,0.45);}
+.btn:hover{background:var(--gold-2);transform:translateY(-3px);box-shadow:0 10px 40px rgba(201,168,76,0.6);}
+.pg-hero{position:relative;min-height:400px;display:flex;align-items:flex-end;padding-top:72px;overflow:hidden;}
+.ph-bg{position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1600&q=85');background-size:cover;background-position:center 45%;}
+.ph-ov{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(10,18,32,0.45) 0%,rgba(10,18,32,0.92) 100%);}
+.ph-c{position:relative;z-index:2;padding:56px 72px;width:100%;}
+.ph-c h1{font-family:'Cormorant Garamond',serif;font-size:clamp(40px,6vw,66px);font-weight:300;color:var(--tl);line-height:1.08;margin-bottom:14px;}
+.ph-c h1 em{font-style:italic;color:var(--gold-2);}
+.ph-c p{font-size:12px;font-weight:300;color:var(--tm);max-width:480px;line-height:1.85;}
+.svc-body{padding:88px 72px;max-width:1040px;margin:0 auto;}
+.svc-intro{margin-bottom:64px;}
+.svc-intro h2{font-family:'Cormorant Garamond',serif;font-size:clamp(26px,3.5vw,40px);font-weight:300;color:var(--tl);line-height:1.1;margin-bottom:18px;}
+.svc-intro h2 em{font-style:italic;color:var(--gold-2);}
+.svc-intro p{font-size:13px;font-weight:300;color:var(--tm);line-height:1.9;max-width:620px;margin-bottom:12px;}
+.includes-label{font-size:8px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:rgba(201,168,76,0.5);margin-bottom:24px;display:block;}
+.includes-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0 48px;}
+.inc-item{display:flex;align-items:flex-start;gap:12px;padding:16px 0;border-bottom:1px solid rgba(28,32,53,0.12);}
+.inc-dot{width:5px;height:5px;border-radius:50%;background:var(--gold);flex-shrink:0;margin-top:7px;opacity:0.8;}
+.inc-text{font-size:12px;font-weight:300;color:var(--tm);line-height:1.6;}
+.freq-row{background:var(--navy-2);border-top:1px solid var(--b);border-bottom:1px solid var(--b);padding:64px 72px;}
+.freq-inner{max-width:820px;margin:0 auto;}
+.freq-inner h2{font-family:'Cormorant Garamond',serif;font-size:clamp(24px,3vw,36px);font-weight:300;color:var(--tl);line-height:1.1;margin-bottom:32px;}
+.freq-inner h2 em{font-style:italic;color:var(--gold-2);}
+.freq-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.fc{border:1px solid var(--b);padding:28px 24px;}
+.fc-label{font-size:8px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:12px;display:block;}
+.fc-title{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:300;color:var(--tl);margin-bottom:10px;}
+.fc-desc{font-size:11px;font-weight:300;color:var(--tm);line-height:1.7;}
+.trust-bar{border-top:1px solid var(--b);border-bottom:1px solid var(--b);padding:52px 72px;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center;}
+.tb-val{font-family:'Cormorant Garamond',serif;font-size:38px;font-weight:300;color:var(--gold-2);margin-bottom:6px;}
+.tb-lbl{font-size:9px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--tm);}
+.svc-cta{background:var(--navy-2);padding:88px 72px;text-align:center;border-top:1px solid var(--b);}
+.svc-cta h2{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,4vw,44px);font-weight:300;color:var(--tl);line-height:1.1;margin-bottom:14px;}
+.svc-cta h2 em{font-style:italic;color:var(--gold-2);}
+.svc-cta p{font-size:12px;font-weight:300;color:var(--tm);margin-bottom:32px;}
+.foot{background:var(--navy);border-top:1px solid var(--b);padding:36px 52px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;}
+.foot-logo img{height:32px;width:auto;display:block;}
+.foot-links{display:flex;gap:28px;}
+.foot-links a{font-size:9px;font-weight:400;letter-spacing:2px;text-transform:uppercase;color:var(--td);transition:color 0.2s;}
+.foot-links a:hover{color:var(--tl);}
+.foot-copy{font-size:9px;color:var(--td);letter-spacing:1px;}
+.foot-social{display:flex;align-items:center;gap:16px;}
+.foot-social a{display:flex;align-items:center;color:var(--td);transition:color 0.2s;}
+.foot-social a:hover{color:var(--gold);}
+.foot-social svg{width:17px;height:17px;}
+@media(max-width:860px){.sr-nav{padding:0 24px;}.sr-nav__links{display:none;}.nav-hamburger{display:flex;}.ph-c{padding:44px 28px;}.svc-body{padding:64px 24px;}.includes-grid{grid-template-columns:1fr;gap:0;}.freq-row{padding:52px 24px;}.freq-cards{grid-template-columns:1fr;}.trust-bar{grid-template-columns:repeat(2,1fr);padding:40px 24px;}.svc-cta{padding:64px 24px;}.foot{padding:24px;}.foot-links{display:none;}}
+</style>
+</head>
+<body>
+<nav class="sr-nav">
+  <a href="index.html"><img src="https://cdn.bookingkoala.com/uploads/summitresidence/2026/2/13/1770954119SummitResidenceCoLogo300pxCircle.png" alt="Summit Residence Co." class="nav-logo-img"></a>
+  <ul class="sr-nav__links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li class="nav-drop">
+      <a href="services.html" class="active">Services</a>
+      <ul class="nav-drop-menu">
+        <li><a href="service-standard.html">Standard Cleaning</a></li>
+        <li><a href="service-deep.html">Deep / Initial Clean</a></li>
+        <li><a href="service-moveinout.html">Move-In / Move-Out</a></li>
+        <li><a href="service-airbnb.html">Airbnb / STR Cleaning</a></li>
+        <li><a href="service-recurring.html">Recurring Plans</a></li>
+      </ul>
+    </li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="booknow.html" class="nav-cta">Book Now</a></li>
+  </ul>
+  <button class="nav-hamburger" aria-label="Menu" onclick="this.classList.toggle('open');document.getElementById('nm').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="nav-mobile" id="nm">
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="services.html">Services</a>
+  <a href="service-standard.html" class="mobile-sub">Standard Cleaning</a>
+  <a href="service-deep.html" class="mobile-sub">Deep / Initial Clean</a>
+  <a href="service-moveinout.html" class="mobile-sub">Move-In / Move-Out</a>
+  <a href="service-airbnb.html" class="mobile-sub">Airbnb / STR</a>
+  <a href="service-recurring.html" class="mobile-sub">Recurring Plans</a>
+  <a href="faq.html">FAQ</a>
+  <a href="contact.html">Contact</a>
+  <a href="booknow.html" class="mobile-cta">Book Now</a>
+</div>
+<section class="pg-hero">
+  <div class="ph-bg"></div><div class="ph-ov"></div>
+  <div class="ph-c">
+    <span class="sr-ey">Save More · Recurring</span>
+    <h1>Recurring <em>Cleaning Plans</em></h1>
+    <p>Your home, consistently cared for. Choose your frequency, lock in your rate, and never think about scheduling again.</p>
+  </div>
+</section>
+<div class="svc-body">
+  <div class="svc-intro">
+    <span class="sr-ey">What It Is</span>
+    <h2>Clean on <em>Your Schedule</em></h2>
+    <p>Weekly, biweekly, or monthly — pick the frequency that fits your life and we handle everything else. Same team, locked-in pricing, and priority booking for every visit.</p>
+    <p>No contracts. Pause or cancel anytime. Start with a deep clean and maintain from there.</p>
+  </div>
+  <div>
+    <span class="includes-label">What's Included</span>
+    <div class="includes-grid">
+      <div class="inc-item"><div class="inc-dot"></div><div class="inc-text">Weekly, biweekly, or monthly scheduling</div></div>
+      <div class="inc-item"><div class="inc-dot"></div><div class="inc-text">Priority booking & scheduling guaranteed</div></div>
+      <div class="inc-item"><div class="inc-dot"></div><div class="inc-text">Rate locked for the life of your plan</div></div>
+      <div class="inc-item"><div class="inc-dot"></div><div class="inc-text">Same dedicated cleaning team every visit</div></div>
+      <div class="inc-item"><div class="inc-dot"></div><div class="inc-text">Pause or cancel anytime — no penalty</div></div>
+      <div class="inc-item"><div class="inc-dot"></div><div class="inc-text">24-hour satisfaction guarantee</div></div>
+      <div class="inc-item"><div class="inc-dot"></div><div class="inc-text">Full standard clean every visit</div></div>
+      <div class="inc-item"><div class="inc-dot"></div><div class="inc-text">Add-ons available (deep clean, inside appliances)</div></div>
+    </div>
+  </div>
+</div>
+<div class="freq-row">
+  <div class="freq-inner">
+    <h2>Choose Your <em>Frequency</em></h2>
+    <div class="freq-cards">
+      <div class="fc"><span class="fc-label">Most Popular</span><div class="fc-title">Biweekly</div><p class="fc-desc">Every two weeks. The most popular option — keeps your home consistently clean without over-scheduling.</p></div>
+      <div class="fc"><span class="fc-label">Best Value</span><div class="fc-title">Weekly</div><p class="fc-desc">Every week. Ideal for larger homes, busy families, or homeowners who want maximum consistency.</p></div>
+      <div class="fc"><span class="fc-label">Monthly</span><div class="fc-title">Monthly</div><p class="fc-desc">Once a month. A great option for maintaining a home that stays relatively clean between visits.</p></div>
+    </div>
+  </div>
+</div>
+<div class="trust-bar">
+  <div><div class="tb-val">200+</div><div class="tb-lbl">Homes Cleaned</div></div>
+  <div><div class="tb-val">4.9★</div><div class="tb-lbl">Average Rating</div></div>
+  <div><div class="tb-val">100%</div><div class="tb-lbl">Satisfaction Guarantee</div></div>
+  <div><div class="tb-val">0</div><div class="tb-lbl">Cancellation Fees</div></div>
+</div>
+<div class="svc-cta">
+  <span class="sr-ey">Instant Booking</span>
+  <h2>Build Your <em>Recurring Plan</em></h2>
+  <p>Choose your frequency, see your exact price, and book in 60 seconds. No phone calls, no quotes.</p>
+  <a href="booknow.html" class="btn">Build My Plan</a>
+</div>
+<footer class="foot">
+  <a href="index.html" class="foot-logo"><img src="https://cdn.bookingkoala.com/uploads/summitresidence/2026/2/13/1770954119SummitResidenceCoLogo300pxCircle.png" alt="Summit Residence Co."></a>
+  <div class="foot-links"><a href="services.html">Services</a><a href="about.html">About Us</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a><a href="booknow.html">Book Now</a></div>
+  <span class="foot-copy">© 2026 Summit Residence Co. · Saratoga, CA</span>
+  <div class="foot-social">
+    <a href="https://www.instagram.com/summitresidenceco/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor"/></svg></a>
+    <a href="https://www.facebook.com/profile.php?id=61587655907539" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+  </div>
+</footer>
+</body>
+</html>

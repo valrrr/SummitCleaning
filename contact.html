@@ -4,6 +4,7 @@
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact Us | Summit Residence Co. | South Bay</title>
 <meta name="description" content="Contact Summit Residence Co. Call (408) 600-9996 or send a message. Serving Saratoga, Los Gatos & Almaden Valley.">
+<link rel="icon" href="https://cdn.bookingkoala.com/uploads/summitresidence/2026/2/13/1770954119SummitResidenceCoLogo300pxCircle.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -27,6 +28,16 @@ a{text-decoration:none;}
 .nav-mobile a{font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--tm);padding:14px 28px;border-bottom:1px solid rgba(201,168,76,0.07);transition:color 0.2s;}
 .nav-mobile a:hover{color:var(--tl);}
 .mobile-cta{background:var(--gold);color:var(--navy)!important;margin:16px 28px 0;text-align:center;padding:14px!important;border-bottom:none!important;}
+.nav-drop{position:relative;}
+.nav-drop>a{display:flex;align-items:center;gap:5px;}
+.nav-drop>a::after{content:'';display:inline-block;width:4px;height:4px;border-right:1px solid currentColor;border-bottom:1px solid currentColor;transform:rotate(45deg) translateY(-1px);opacity:0.5;transition:transform 0.2s;}
+.nav-drop:hover>a::after{transform:rotate(-135deg) translateY(1px);}
+.nav-drop-menu{position:absolute;top:calc(100% + 12px);left:50%;transform:translateX(-50%) translateY(-6px);background:rgba(12,22,40,0.98);border:1px solid var(--b);min-width:210px;padding:8px 0;opacity:0;visibility:hidden;transition:opacity 0.22s,transform 0.22s;pointer-events:none;backdrop-filter:blur(16px);list-style:none;z-index:100;}
+.nav-drop:hover .nav-drop-menu{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0);pointer-events:auto;}
+.nav-drop-menu li a{display:block;font-size:8.5px;font-weight:500;letter-spacing:1.8px;text-transform:uppercase;color:var(--tm);padding:11px 20px;border-bottom:1px solid rgba(201,168,76,0.06);transition:color 0.2s,background 0.2s;}
+.nav-drop-menu li:last-child a{border-bottom:none;}
+.nav-drop-menu li a:hover{color:var(--tl);background:rgba(201,168,76,0.06);}
+.mobile-sub{padding-left:44px!important;font-size:9px!important;background:rgba(255,255,255,0.02)!important;border-bottom-color:rgba(201,168,76,0.04)!important;color:rgba(248,246,241,0.55)!important;}
 .sr-ey{display:block;font-size:9px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:16px;}
 .cw{min-height:calc(100vh - 72px);padding-top:72px;display:grid;grid-template-columns:1fr 1fr;}
 .cl{background:var(--navy-2);padding:80px 64px;display:flex;flex-direction:column;justify-content:center;border-right:1px solid var(--b);}
@@ -72,8 +83,20 @@ textarea{resize:vertical;min-height:110px;}
 <nav class="sr-nav">
   <a href="index.html"><img src="https://cdn.bookingkoala.com/uploads/summitresidence/2026/2/13/1770954119SummitResidenceCoLogo300pxCircle.png" alt="Summit Residence Co." class="nav-logo-img"></a>
   <ul class="sr-nav__links">
-    <li><a href="services.html">Services</a></li><li><a href="about.html">About</a></li>
-    <li><a href="faq.html">FAQ</a></li><li><a href="contact.html" class="active">Contact</a></li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li class="nav-drop">
+      <a href="services.html">Services</a>
+      <ul class="nav-drop-menu">
+        <li><a href="service-standard.html">Standard Cleaning</a></li>
+        <li><a href="service-deep.html">Deep / Initial Clean</a></li>
+        <li><a href="service-moveinout.html">Move-In / Move-Out</a></li>
+        <li><a href="service-airbnb.html">Airbnb / STR Cleaning</a></li>
+        <li><a href="service-recurring.html">Recurring Plans</a></li>
+      </ul>
+    </li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
     <li><a href="booknow.html" class="nav-cta">Book Now</a></li>
   </ul>
   <button class="nav-hamburger" aria-label="Menu" onclick="this.classList.toggle('open');document.getElementById('nm').classList.toggle('open')">
@@ -81,8 +104,16 @@ textarea{resize:vertical;min-height:110px;}
   </button>
 </nav>
 <div class="nav-mobile" id="nm">
-  <a href="services.html">Services</a><a href="about.html">About</a>
-  <a href="faq.html">FAQ</a><a href="contact.html">Contact</a>
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="services.html">Services</a>
+  <a href="service-standard.html" class="mobile-sub">Standard Cleaning</a>
+  <a href="service-deep.html" class="mobile-sub">Deep / Initial Clean</a>
+  <a href="service-moveinout.html" class="mobile-sub">Move-In / Move-Out</a>
+  <a href="service-airbnb.html" class="mobile-sub">Airbnb / STR</a>
+  <a href="service-recurring.html" class="mobile-sub">Recurring Plans</a>
+  <a href="faq.html">FAQ</a>
+  <a href="contact.html">Contact</a>
   <a href="booknow.html" class="mobile-cta">Book Now</a>
 </div>
 <div class="cw">
