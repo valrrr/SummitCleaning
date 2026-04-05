@@ -1,12 +1,4 @@
 {
-  "cleanUrls": true,
-  "trailingSlash": false,
-  "routes": [
-    { "src": "/", "dest": "/index.html" },
-    { "src": "/booknow", "dest": "/booknow.html" },
-    { "src": "/about", "dest": "/about.html" },
-    { "src": "/services", "dest": "/services.html" },
-    { "src": "/faq", "dest": "/faq.html" },
-    { "src": "/contact", "dest": "/contact.html" }
-  ]
+  "outputDirectory": ".",
+  "cleanUrls": true
 }
