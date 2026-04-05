@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Summit Residence Co. | South Bay</title>
+<meta name="description" content="Contact Summit Residence Co. Call (408) 600-9996 or send a message. Serving Saratoga, Los Gatos & Almaden Valley.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0c1628;--navy-2:#152035;--gold:#c9a84c;--gold-2:#dfc078;--cream:#f8f6f1;--tl:rgba(248,246,241,0.92);--tm:rgba(248,246,241,0.52);--td:rgba(248,246,241,0.26);--dk:#1c2035;--dkm:rgba(28,32,53,0.62);--b:rgba(201,168,76,0.14);--bl:rgba(28,32,53,0.09);}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Montserrat',sans-serif;background:var(--navy);-webkit-font-smoothing:antialiased;}
+a{text-decoration:none;}
+.sr-nav{position:fixed;top:0;left:0;right:0;z-index:999;height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 52px;background:rgba(12,22,40,0.97);backdrop-filter:blur(16px);border-bottom:1px solid var(--b);}
+.nav-logo-img{height:40px;width:auto;display:block;}
+.sr-nav__links{display:flex;align-items:center;gap:36px;list-style:none;}
+.sr-nav__links a{font-size:9.5px;font-weight:500;letter-spacing:2.2px;text-transform:uppercase;color:var(--tm);transition:color 0.2s;}
+.sr-nav__links a:hover,.sr-nav__links a.active{color:var(--tl);}
+.nav-cta{background:var(--gold);color:var(--navy)!important;font-weight:600!important;padding:10px 24px;}
+.nav-hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px;}
+.nav-hamburger span{display:block;width:22px;height:1.5px;background:var(--tl);transition:all 0.25s;}
+.nav-hamburger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg);}
+.nav-hamburger.open span:nth-child(2){opacity:0;}
+.nav-hamburger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg);}
+.nav-mobile{display:none;position:fixed;top:72px;left:0;right:0;z-index:998;background:rgba(12,22,40,0.98);border-bottom:1px solid var(--b);flex-direction:column;padding:16px 0;}
+.nav-mobile.open{display:flex;}
+.nav-mobile a{font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--tm);padding:14px 28px;border-bottom:1px solid rgba(201,168,76,0.07);transition:color 0.2s;}
+.nav-mobile a:hover{color:var(--tl);}
+.mobile-cta{background:var(--gold);color:var(--navy)!important;margin:16px 28px 0;text-align:center;padding:14px!important;border-bottom:none!important;}
+.sr-ey{display:block;font-size:9px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:16px;}
+.cw{min-height:calc(100vh - 72px);padding-top:72px;display:grid;grid-template-columns:1fr 1fr;}
+.cl{background:var(--navy-2);padding:80px 64px;display:flex;flex-direction:column;justify-content:center;border-right:1px solid var(--b);}
+.cl h1{font-family:'Cormorant Garamond',serif;font-size:clamp(36px,5vw,56px);font-weight:300;color:var(--tl);line-height:1.08;margin-bottom:22px;}
+.cl h1 em{font-style:italic;color:var(--gold-2);}
+.cl-intro{font-size:13px;font-weight:300;color:var(--tm);line-height:1.85;margin-bottom:48px;max-width:380px;}
+.details{display:flex;flex-direction:column;gap:26px;}
+.dl{display:block;font-size:8px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:rgba(201,168,76,0.44);margin-bottom:4px;}
+.dv{font-size:14px;font-weight:300;color:var(--tl);letter-spacing:0.3px;}
+.dv a{color:var(--tl);transition:color 0.2s;}
+.dv a:hover{color:var(--gold);}
+.cl-rule{width:36px;height:1px;background:var(--gold);opacity:0.3;margin:32px 0;}
+.cl-link{font-size:12px;font-weight:300;color:var(--gold);display:inline-flex;align-items:center;gap:8px;transition:opacity 0.2s;}
+.cl-link:hover{opacity:0.75;}
+.cl-link svg{width:11px;height:11px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;}
+.cr{background:var(--navy);padding:80px 64px;display:flex;flex-direction:column;justify-content:center;}
+.cr h2{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:300;color:var(--tl);margin-bottom:36px;}
+.cr h2 em{font-style:italic;color:var(--gold-2);}
+.fg{display:flex;flex-direction:column;gap:6px;margin-bottom:20px;}
+label{font-size:8.5px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:rgba(248,246,241,0.34);}
+input,textarea,select{background:rgba(255,255,255,0.036);border:1px solid rgba(201,168,76,0.13);color:var(--tl);font-family:'Montserrat',sans-serif;font-size:13px;font-weight:300;padding:14px 16px;width:100%;outline:none;transition:border-color 0.2s;appearance:none;}
+input:focus,textarea:focus,select:focus{border-color:rgba(201,168,76,0.38);}
+input::placeholder,textarea::placeholder{color:rgba(248,246,241,0.17);}
+select option{background:var(--navy-2);color:var(--tl);}
+textarea{resize:vertical;min-height:110px;}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.sbtn{background:var(--gold);color:var(--navy);font-family:'Montserrat',sans-serif;font-size:10px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;border:none;padding:16px;cursor:pointer;width:100%;margin-top:8px;transition:background 0.2s,transform 0.18s;}
+.sbtn:hover{background:var(--gold-2);transform:translateY(-2px);}
+.foot{background:var(--navy);border-top:1px solid var(--b);padding:36px 52px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;}
+.foot-logo img{height:32px;width:auto;display:block;}
+.foot-links{display:flex;gap:28px;}
+.foot-links a{font-size:9px;font-weight:400;letter-spacing:2px;text-transform:uppercase;color:var(--td);transition:color 0.2s;}
+.foot-links a:hover{color:var(--tl);}
+.foot-copy{font-size:9px;color:var(--td);letter-spacing:1px;}
+@media(max-width:900px){.sr-nav{padding:0 24px;}.sr-nav__links{display:none;}.nav-hamburger{display:flex;}.cw{grid-template-columns:1fr;}.cl,.cr{padding:60px 28px;border-right:none;}.frow{grid-template-columns:1fr;}.foot{padding:24px;}.foot-links{display:none;}}
+</style>
+</head>
+<body>
+<nav class="sr-nav">
+  <a href="index.html"><img src="https://cdn.bookingkoala.com/uploads/summitresidence/2026/2/13/1770954119SummitResidenceCoLogo300pxCircle.png" alt="Summit Residence Co." class="nav-logo-img"></a>
+  <ul class="sr-nav__links">
+    <li><a href="services.html">Services</a></li><li><a href="about.html">About</a></li>
+    <li><a href="faq.html">FAQ</a></li><li><a href="contact.html" class="active">Contact</a></li>
+    <li><a href="booknow.html" class="nav-cta">Book Now</a></li>
+  </ul>
+  <button class="nav-hamburger" aria-label="Menu" onclick="this.classList.toggle('open');document.getElementById('nm').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="nav-mobile" id="nm">
+  <a href="services.html">Services</a><a href="about.html">About</a>
+  <a href="faq.html">FAQ</a><a href="contact.html">Contact</a>
+  <a href="booknow.html" class="mobile-cta">Book Now</a>
+</div>
+<div class="cw">
+  <div class="cl">
+    <span class="sr-ey">Get In Touch</span>
+    <h1>Let's Talk About<br><em>Your Home</em></h1>
+    <p class="cl-intro">Have a question before booking? Interested in Airbnb cleaning or a custom recurring plan? We respond fast.</p>
+    <div class="details">
+      <div><span class="dl">Phone</span><div class="dv"><a href="tel:4086009996">(408) 600-9996</a></div></div>
+      <div><span class="dl">Website</span><div class="dv"><a href="https://summitresidence.us">summitresidence.us</a></div></div>
+      <div><span class="dl">Service Area</span><div class="dv">Saratoga · Los Gatos · Almaden Valley</div></div>
+    </div>
+    <div class="cl-rule"></div>
+    <a href="booknow.html" class="cl-link">See your price & book online <svg viewBox="0 0 11 11"><path d="M1 5.5h9M6 1.5l4 4-4 4"/></svg></a>
+  </div>
+  <div class="cr">
+    <h2>Send us a <em>message</em></h2>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <div class="frow">
+        <div class="fg"><label for="fn">First Name</label><input type="text" id="fn" name="first_name" placeholder="First name" required></div>
+        <div class="fg"><label for="ln">Last Name</label><input type="text" id="ln" name="last_name" placeholder="Last name"></div>
+      </div>
+      <div class="frow">
+        <div class="fg"><label for="em">Email</label><input type="email" id="em" name="email" placeholder="your@email.com" required></div>
+        <div class="fg"><label for="ph">Phone</label><input type="tel" id="ph" name="phone" placeholder="(408) 000-0000"></div>
+      </div>
+      <div class="fg"><label for="sv">Service Interested In</label>
+        <select id="sv" name="service">
+          <option value="" disabled selected>Select a service</option>
+          <option>Standard Cleaning</option><option>Deep / Initial Clean</option>
+          <option>Move-In / Move-Out</option><option>Airbnb / STR Cleaning</option>
+          <option>Recurring Plan</option><option>Other</option>
+        </select>
+      </div>
+      <div class="fg"><label for="ms">Message</label><textarea id="ms" name="message" placeholder="Tell us about your home or any questions you have..."></textarea></div>
+      <button type="submit" class="sbtn">Send Message</button>
+    </form>
+  </div>
+</div>
+<footer class="foot">
+  <a href="index.html" class="foot-logo"><img src="https://cdn.bookingkoala.com/uploads/summitresidence/2026/2/13/1770954119SummitResidenceCoLogo300pxCircle.png" alt="Summit Residence Co."></a>
+  <div class="foot-links"><a href="services.html">Services</a><a href="about.html">About</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a><a href="booknow.html">Book Now</a></div>
+  <span class="foot-copy">© 2026 Summit Residence Co. · Saratoga, CA</span>
+</footer>
+</body>
+</html>

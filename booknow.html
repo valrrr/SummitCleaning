@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book a Home Clean | Summit Residence Co.</title>
+<meta name="description" content="Book your standard or deep clean online in 60 seconds. See your exact price before you pay. Serving Saratoga, Los Gatos & Almaden Valley.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0c1628;--navy-2:#152035;--gold:#c9a84c;--gold-2:#dfc078;--tl:rgba(248,246,241,0.92);--tm:rgba(248,246,241,0.52);--td:rgba(248,246,241,0.26);--b:rgba(201,168,76,0.14);}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Montserrat',sans-serif;background:var(--navy);-webkit-font-smoothing:antialiased;}
+a{text-decoration:none;}
+.sr-nav{position:fixed;top:0;left:0;right:0;z-index:999;height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 52px;background:rgba(12,22,40,0.97);backdrop-filter:blur(16px);border-bottom:1px solid var(--b);}
+.nav-logo-img{height:40px;width:auto;display:block;}
+.sr-nav__links{display:flex;align-items:center;gap:36px;list-style:none;}
+.sr-nav__links a{font-size:9.5px;font-weight:500;letter-spacing:2.2px;text-transform:uppercase;color:var(--tm);transition:color 0.2s;}
+.sr-nav__links a:hover{color:var(--tl);}
+.nav-cta{background:var(--gold);color:var(--navy)!important;font-weight:600!important;padding:10px 24px;}
+.nav-hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px;}
+.nav-hamburger span{display:block;width:22px;height:1.5px;background:var(--tl);transition:all 0.25s;}
+.nav-hamburger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg);}
+.nav-hamburger.open span:nth-child(2){opacity:0;}
+.nav-hamburger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg);}
+.nav-mobile{display:none;position:fixed;top:72px;left:0;right:0;z-index:998;background:rgba(12,22,40,0.98);border-bottom:1px solid var(--b);flex-direction:column;padding:16px 0;}
+.nav-mobile.open{display:flex;}
+.nav-mobile a{font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--tm);padding:14px 28px;border-bottom:1px solid rgba(201,168,76,0.07);transition:color 0.2s;}
+.nav-mobile a:hover{color:var(--tl);}
+.mobile-cta{background:var(--gold);color:var(--navy)!important;margin:16px 28px 0;text-align:center;padding:14px!important;border-bottom:none!important;}
+.sr-ey{display:block;font-size:9px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:16px;}
+.bk-hdr{background:var(--navy-2);padding:120px 72px 72px;text-align:center;border-bottom:1px solid var(--b);}
+.bk-hdr h1{font-family:'Cormorant Garamond',serif;font-size:clamp(40px,6vw,66px);font-weight:300;color:var(--tl);line-height:1.08;margin-bottom:16px;}
+.bk-hdr h1 em{font-style:italic;color:var(--gold-2);}
+.bk-hdr p{font-size:12px;font-weight:300;color:var(--tm);line-height:1.85;max-width:480px;margin:0 auto 36px;}
+.pills{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;}
+.pill{font-size:9px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--td);border:1px solid var(--b);padding:9px 18px;}
+.bk-form{background:var(--navy);padding:0;}
+.bk-form iframe{width:100%;min-height:820px;border:none;display:block;}
+.foot{background:var(--navy);border-top:1px solid var(--b);padding:36px 52px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;}
+.foot-logo img{height:32px;width:auto;display:block;}
+.foot-copy{font-size:9px;color:var(--td);letter-spacing:1px;}
+@media(max-width:860px){.sr-nav{padding:0 24px;}.sr-nav__links{display:none;}.nav-hamburger{display:flex;}.bk-hdr{padding:100px 24px 60px;}.foot{padding:24px;}}
+</style>
+</head>
+<body>
+<nav class="sr-nav">
+  <a href="index.html"><img src="https://cdn.bookingkoala.com/uploads/summitresidence/2026/2/13/1770954119SummitResidenceCoLogo300pxCircle.png" alt="Summit Residence Co." class="nav-logo-img"></a>
+  <ul class="sr-nav__links">
+    <li><a href="services.html">Services</a></li><li><a href="about.html">About</a></li>
+    <li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li>
+    <li><a href="booknow.html" class="nav-cta">Book Now</a></li>
+  </ul>
+  <button class="nav-hamburger" aria-label="Menu" onclick="this.classList.toggle('open');document.getElementById('nm').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="nav-mobile" id="nm">
+  <a href="services.html">Services</a><a href="about.html">About</a>
+  <a href="faq.html">FAQ</a><a href="contact.html">Contact</a>
+  <a href="booknow.html" class="mobile-cta">Book Now</a>
+</div>
+<div class="bk-hdr">
+  <span class="sr-ey">Summit Residence Co.</span>
+  <h1>Book Your <em>Clean</em></h1>
+  <p>Select your home size, choose your service, and pick a date. Your exact price is shown before payment — no surprises. Confirmation is instant.</p>
+  <div class="pills">
+    <span class="pill">Instant Confirmation</span><span class="pill">Transparent Pricing</span>
+    <span class="pill">24-Hour Guarantee</span><span class="pill">Same Team Every Visit</span>
+  </div>
+</div>
+<div class="bk-form">
+  <iframe src="https://summitresidence.bookingkoala.com/booknow" title="Book your clean"></iframe>
+</div>
+<footer class="foot">
+  <a href="index.html" class="foot-logo"><img src="https://cdn.bookingkoala.com/uploads/summitresidence/2026/2/13/1770954119SummitResidenceCoLogo300pxCircle.png" alt="Summit Residence Co."></a>
+  <span class="foot-copy">© 2026 Summit Residence Co. · Saratoga, CA</span>
+</footer>
+</body>
+</html>

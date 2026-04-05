@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cleaning Services | Summit Residence Co. | Saratoga & Los Gatos</title>
+<meta name="description" content="Standard cleaning, deep cleaning, move-in/out, Airbnb turnovers for Saratoga, Los Gatos & Almaden Valley.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0c1628;--navy-2:#152035;--gold:#c9a84c;--gold-2:#dfc078;--cream:#f8f6f1;--tl:rgba(248,246,241,0.92);--tm:rgba(248,246,241,0.52);--td:rgba(248,246,241,0.26);--b:rgba(201,168,76,0.14);}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Montserrat',sans-serif;background:var(--navy);-webkit-font-smoothing:antialiased;}
+a{text-decoration:none;}
+.sr-nav{position:fixed;top:0;left:0;right:0;z-index:999;height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 52px;background:rgba(12,22,40,0.97);backdrop-filter:blur(16px);border-bottom:1px solid var(--b);}
+.nav-logo-img{height:40px;width:auto;display:block;}
+.sr-nav__links{display:flex;align-items:center;gap:36px;list-style:none;}
+.sr-nav__links a{font-size:9.5px;font-weight:500;letter-spacing:2.2px;text-transform:uppercase;color:var(--tm);transition:color 0.2s;}
+.sr-nav__links a:hover,.sr-nav__links a.active{color:var(--tl);}
+.nav-cta{background:var(--gold);color:var(--navy)!important;font-weight:600!important;padding:10px 24px;}
+.nav-hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px;}
+.nav-hamburger span{display:block;width:22px;height:1.5px;background:var(--tl);transition:all 0.25s;}
+.nav-hamburger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg);}
+.nav-hamburger.open span:nth-child(2){opacity:0;}
+.nav-hamburger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg);}
+.nav-mobile{display:none;position:fixed;top:72px;left:0;right:0;z-index:998;background:rgba(12,22,40,0.98);border-bottom:1px solid var(--b);flex-direction:column;padding:16px 0;}
+.nav-mobile.open{display:flex;}
+.nav-mobile a{font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--tm);padding:14px 28px;border-bottom:1px solid rgba(201,168,76,0.07);transition:color 0.2s;}
+.nav-mobile a:hover{color:var(--tl);}
+.mobile-cta{background:var(--gold);color:var(--navy)!important;margin:16px 28px 0;text-align:center;padding:14px!important;border-bottom:none!important;}
+.sr-ey{display:block;font-size:9px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:16px;}
+.sr-h2{font-family:'Cormorant Garamond',serif;font-size:clamp(30px,4.5vw,50px);font-weight:300;line-height:1.1;color:var(--tl);}
+.sr-h2 em{font-style:italic;color:var(--gold-2);}
+.btn{display:inline-block;background:var(--gold);color:var(--navy);font-size:10px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;padding:16px 44px;transition:background 0.2s,transform 0.18s;}
+.btn:hover{background:var(--gold-2);transform:translateY(-2px);}
+.pg-hero{position:relative;min-height:380px;display:flex;align-items:flex-end;padding-top:72px;overflow:hidden;}
+.pg-hero-bg{position:absolute;inset:0;background-image:url('https://cdn.bookingkoala.com/uploads/summitresidence/2026/3/22/1774214457ScreenShot20260322at2.20.29PM.png');background-size:cover;background-position:center 45%;}
+.pg-hero-ov{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(10,18,32,0.45) 0%,rgba(10,18,32,0.88) 100%);}
+.pg-hero-c{position:relative;z-index:2;padding:56px 72px;width:100%;}
+.pg-hero-c h1{font-family:'Cormorant Garamond',serif;font-size:clamp(40px,6vw,66px);font-weight:300;color:var(--tl);line-height:1.08;margin-bottom:12px;}
+.pg-hero-c h1 em{font-style:italic;color:var(--gold-2);}
+.pg-hero-c p{font-size:12px;font-weight:300;color:var(--tm);max-width:480px;line-height:1.85;}
+.srows{border-top:1px solid var(--b);}
+.sr{display:grid;grid-template-columns:72px 1fr 100px;align-items:center;border-bottom:1px solid var(--b);padding:52px 72px 52px 0;gap:36px;transition:background 0.22s;}
+.sr:hover{background:rgba(201,168,76,0.028);}
+.sr.alt{background:rgba(255,255,255,0.012);}
+.sr.alt:hover{background:rgba(201,168,76,0.04);}
+.sn{display:flex;align-items:center;justify-content:center;padding-left:28px;}
+.sn span{font-family:'Cormorant Garamond',serif;font-size:11px;color:rgba(201,168,76,0.28);letter-spacing:1.5px;}
+.stag{font-size:8px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:rgba(201,168,76,0.5);margin-bottom:10px;display:block;}
+.stitle{font-family:'Cormorant Garamond',serif;font-size:clamp(24px,3vw,40px);font-weight:400;color:var(--tl);line-height:1.1;margin-bottom:10px;}
+.sdesc{font-size:12px;font-weight:300;color:var(--tm);line-height:1.85;max-width:540px;margin-bottom:16px;}
+.sfeats{display:flex;flex-wrap:wrap;gap:8px 22px;}
+.feat{font-size:10px;font-weight:300;color:rgba(248,246,241,0.42);display:flex;align-items:center;gap:7px;}
+.feat::before{content:'';width:3px;height:3px;border-radius:50%;background:var(--gold);flex-shrink:0;}
+.sbtn{display:flex;flex-direction:column;align-items:center;gap:9px;flex-shrink:0;}
+.sring{width:58px;height:58px;border-radius:50%;border:1px solid rgba(201,168,76,0.28);display:flex;align-items:center;justify-content:center;transition:background 0.22s,transform 0.22s;}
+.sbtn:hover .sring{background:var(--gold);transform:scale(1.07);}
+.sring svg{width:15px;height:15px;stroke:var(--gold);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;transition:stroke 0.22s;}
+.sbtn:hover .sring svg{stroke:var(--navy);}
+.slbl{font-size:7.5px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:rgba(201,168,76,0.38);}
+.pcta{background:var(--navy-2);padding:80px 72px;text-align:center;border-top:1px solid var(--b);}
+.pcta h2{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,4vw,44px);font-weight:300;color:var(--tl);line-height:1.1;margin-bottom:14px;}
+.pcta h2 em{font-style:italic;color:var(--gold-2);}
+.pcta p{font-size:12px;font-weight:300;color:var(--tm);margin-bottom:32px;}
+.foot{background:var(--navy);border-top:1px solid var(--b);padding:36px 52px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;}
+.foot-logo img{height:32px;width:auto;display:block;}
+.foot-links{display:flex;gap:28px;}
+.foot-links a{font-size:9px;font-weight:400;letter-spacing:2px;text-transform:uppercase;color:var(--td);transition:color 0.2s;}
+.foot-links a:hover{color:var(--tl);}
+.foot-copy{font-size:9px;color:var(--td);letter-spacing:1px;}
+@media(max-width:860px){.sr-nav{padding:0 24px;}.sr-nav__links{display:none;}.nav-hamburger{display:flex;}.pg-hero-c{padding:48px 28px;}.pcta{padding:64px 24px;}.sr{grid-template-columns:1fr auto;padding:36px 24px;gap:16px;}.sn{display:none;}.slbl{display:none;}.sring{width:50px;height:50px;}.foot{padding:24px;}.foot-links{display:none;}}
+</style>
+</head>
+<body>
+<nav class="sr-nav">
+  <a href="index.html"><img src="https://cdn.bookingkoala.com/uploads/summitresidence/2026/2/13/1770954119SummitResidenceCoLogo300pxCircle.png" alt="Summit Residence Co." class="nav-logo-img"></a>
+  <ul class="sr-nav__links">
+    <li><a href="services.html" class="active">Services</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="booknow.html" class="nav-cta">Book Now</a></li>
+  </ul>
+  <button class="nav-hamburger" aria-label="Menu" onclick="this.classList.toggle('open');document.getElementById('nm').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="nav-mobile" id="nm">
+  <a href="services.html">Services</a><a href="about.html">About</a>
+  <a href="faq.html">FAQ</a><a href="contact.html">Contact</a>
+  <a href="booknow.html" class="mobile-cta">Book Now</a>
+</div>
+<section class="pg-hero">
+  <div class="pg-hero-bg"></div><div class="pg-hero-ov"></div>
+  <div class="pg-hero-c">
+    <span class="sr-ey">What We Offer</span>
+    <h1>Services Built for <em>South Bay Living</em></h1>
+    <p>Residential and Airbnb cleaning for Saratoga, Los Gatos, and Almaden Valley. Vetted teams. Transparent pricing. Book in 60 seconds.</p>
+  </div>
+</section>
+<div class="srows">
+  <div class="sr"><div class="sn"><span>01</span></div><div><span class="stag">Recurring</span><div class="stitle">Standard Cleaning</div><p class="sdesc">Consistent, thorough cleaning for well-maintained homes. Schedule weekly, biweekly, or monthly — same trusted team every time.</p><div class="sfeats"><span class="feat">All bedrooms & living areas</span><span class="feat">Full kitchen & bathrooms</span><span class="feat">Vacuuming, mopping & dusting</span><span class="feat">Same team every visit</span></div></div><a href="booknow.html" class="sbtn"><div class="sring"><svg viewBox="0 0 15 15"><path d="M2 7.5h11M8.5 3l4.5 4.5-4.5 4.5"/></svg></div><span class="slbl">Book</span></a></div>
+  <div class="sr alt"><div class="sn"><span>02</span></div><div><span class="stag">Required First Visit</span><div class="stitle">Deep / Initial Clean</div><p class="sdesc">A comprehensive top-to-bottom reset for all new clients. Every surface, corner, and fixture addressed before recurring begins.</p><div class="sfeats"><span class="feat">Everything in standard cleaning</span><span class="feat">Baseboards & window sills</span><span class="feat">Inside cabinets & drawers</span><span class="feat">Appliance exteriors & range hood</span></div></div><a href="booknow.html" class="sbtn"><div class="sring"><svg viewBox="0 0 15 15"><path d="M2 7.5h11M8.5 3l4.5 4.5-4.5 4.5"/></svg></div><span class="slbl">Book</span></a></div>
+  <div class="sr"><div class="sn"><span>03</span></div><div><span class="stag">One-Time</span><div class="stitle">Move-In / Move-Out</div><p class="sdesc">Complete cleaning for homes in transition. Ideal for sellers, buyers, and landlords turning over a property.</p><div class="sfeats"><span class="feat">Full deep clean of empty home</span><span class="feat">Inside all cabinets & closets</span><span class="feat">Inside oven, fridge & dishwasher</span><span class="feat">Garage sweep & entry areas</span></div></div><a href="booknow.html" class="sbtn"><div class="sring"><svg viewBox="0 0 15 15"><path d="M2 7.5h11M8.5 3l4.5 4.5-4.5 4.5"/></svg></div><span class="slbl">Book</span></a></div>
+  <div class="sr alt"><div class="sn"><span>04</span></div><div><span class="stag">Airbnb & STR</span><div class="stitle">Short-Term Rental Cleaning</div><p class="sdesc">Fast turnarounds between guest stays. Photo-ready standard, linen management, same-day availability. Built for South Bay hosts who demand consistency.</p><div class="sfeats"><span class="feat">Same-day turnaround</span><span class="feat">Photo-ready standard</span><span class="feat">Linen management available</span><span class="feat">Consistent team every turnover</span></div></div><a href="booknow.html" class="sbtn"><div class="sring"><svg viewBox="0 0 15 15"><path d="M2 7.5h11M8.5 3l4.5 4.5-4.5 4.5"/></svg></div><span class="slbl">Book</span></a></div>
+  <div class="sr"><div class="sn"><span>05</span></div><div><span class="stag">Save More</span><div class="stitle">Recurring Plans</div><p class="sdesc">Weekly, biweekly, or monthly plans with priority scheduling, locked-in rates, and the same trusted team. Pause or cancel anytime.</p><div class="sfeats"><span class="feat">Weekly, biweekly or monthly</span><span class="feat">Priority scheduling guaranteed</span><span class="feat">Rate locked for life of plan</span><span class="feat">Pause or cancel anytime</span></div></div><a href="booknow.html" class="sbtn"><div class="sring"><svg viewBox="0 0 15 15"><path d="M2 7.5h11M8.5 3l4.5 4.5-4.5 4.5"/></svg></div><span class="slbl">Book</span></a></div>
+</div>
+<div class="pcta">
+  <h2>Transparent pricing. <em>Always.</em></h2>
+  <p>See your exact price based on your home's square footage — before you commit.</p>
+  <a href="booknow.html" class="btn">See Your Price</a>
+</div>
+<footer class="foot">
+  <a href="index.html" class="foot-logo"><img src="https://cdn.bookingkoala.com/uploads/summitresidence/2026/2/13/1770954119SummitResidenceCoLogo300pxCircle.png" alt="Summit Residence Co."></a>
+  <div class="foot-links"><a href="services.html">Services</a><a href="about.html">About</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a><a href="booknow.html">Book Now</a></div>
+  <span class="foot-copy">© 2026 Summit Residence Co. · Saratoga, CA</span>
+</footer>
+</body>
+</html>
